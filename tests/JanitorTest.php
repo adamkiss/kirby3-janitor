@@ -127,7 +127,7 @@ final class JanitorTest extends TestCase
         $this->assertEquals(
             'Home Base',
             $janitor->job('context', [
-                'contextPage' => site()->homepage(),
+                'contextPage' => site()->homepage()->id(),
                 'contextData' => 'Base'
             ])['label']
         );
